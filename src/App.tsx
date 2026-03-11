@@ -1,41 +1,24 @@
+import { Link, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Lab2 from "./pages/Lab2";
 import { Toaster } from "react-hot-toast";
-import { Link } from "react-router-dom";
+import Lab1 from "./pages/lab1";
 
 function App() {
   return (
     <>
-      <nav className="bg-blue-600 text-white shadow">
-        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link to="#" className="text-xl font-semibold">
-            <strong>WEB2091 App</strong>
-          </Link>
-
-          <div className="hidden md:flex items-center space-x-8">
-            <Link to="#" className="hover:text-gray-200">
-              Trang chủ
-            </Link>
-            <Link to="/list" className="hover:text-gray-200">
-              Danh sách
-            </Link>
-            <Link to="/add" className="hover:text-gray-200">
-              Thêm mới
-            </Link>
-          </div>
-
-          <div className="hidden md:flex items-center space-x-6">
-            <Link to="#" className="hover:text-gray-200">
-              Đăng nhập
-            </Link>
-            <Link to="#" className="hover:text-gray-200">
-              Đăng ký
-            </Link>
-          </div>
-        </div>
+      <nav className="bg-blue-600 text-white p-4 flex gap-6">
+        <Link to="/">Trang chủ</Link>
+        <Link to="/lab1">Lab 1</Link>
+        <Link to="/lab2">Lab 2</Link>
       </nav>
 
-      {/* MAIN CONTENT */}
-      <div className="max-w-6xl mx-auto mt-10 px-4 text-center">
-        <h1 className="text-4xl font-bold mb-4">Chào mừng đến với WEB2091</h1>
+      <div style={{ padding: 20 }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/lab1" element={<Lab1 />} />
+          <Route path="/lab2" element={<Lab2 />} />
+        </Routes>
       </div>
 
       <Toaster />
