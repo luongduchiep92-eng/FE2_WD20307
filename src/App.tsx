@@ -6,6 +6,8 @@ import Lab1 from "./pages/Lab1";
 import RegisterForm from "./labs/lab3/RegisterForm";
 import LoginForm from "./labs/lab3/LoginForm";
 import Lab3 from "./pages/Lab3";
+import StoryForm from "./labs/lab4/Lab4";
+import Lab4 from "./pages/Lab4";
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
             <Link to="/lab3" className="hover:text-gray-200">
               Lab 3
             </Link>
+            <Link to="/lab4" className="hover:text-gray-200">
+              Lab 4
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
@@ -50,7 +55,9 @@ function App() {
           <Route path="/lab1" element={<Lab1 />} />
           <Route path="/lab2" element={<Lab2 />} />
           <Route path="/lab3" element={<Lab3 />} />
+          <Route path="/lab4" element={<Lab4 />} />
         </Routes>
+          <StoryForm></StoryForm>
       </div>
 
       <Toaster />
