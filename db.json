@@ -1,5 +1,12 @@
 {
   "stories": [],
-  "categories": [],
+  "categories": [
+    {
+      "title": "truyện action mới toanh",
+      "description": "truyện mới đấy mày, đọc đi hay lắm!",
+      "active": true,
+      "id": 1
+    }
+  ],
   "users": []
 }
