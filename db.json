@@ -1,12 +1,14 @@
 {
-  "stories": [],
-  "categories": [
+  "stories": [
     {
-      "title": "truyện action mới toanh",
-      "description": "truyện mới đấy mày, đọc đi hay lắm!",
-      "active": true,
-      "id": 1
+      "id": 1,
+      "title": "Truyện 1",
+      "author": "Tác giả A",
+      "description": "Mô tả...",
+      "image": "https://via.placeholder.com/150",
+      "date": "2024-03-10"
     }
   ],
+  "products": [],
   "users": []
 }
