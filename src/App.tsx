@@ -9,6 +9,7 @@ import Lab3 from "./pages/Lab3";
 import StoryForm from "./labs/lab4/Lab4";
 import Lab4 from "./pages/Lab4";
 import Lab5 from "./pages/Lab5";
+import EditStory from "./labs/lab5/FormEdit";
 
 function App() {
   return (
@@ -61,8 +62,9 @@ function App() {
           <Route path="/lab3" element={<Lab3 />} />
           <Route path="/lab4" element={<Lab4 />} />
           <Route path="/lab5" element={<Lab5 />} />
+          <Route path="lab5/edit/:id" element={<EditStory />} />
         </Routes>
-          <StoryForm></StoryForm>
+          {/* <StoryForm></StoryForm> */}
       </div>
 
       <Toaster />
