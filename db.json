@@ -10,5 +10,12 @@
     }
   ],
   "products": [],
-  "users": []
+  "users": [
+    {
+      "email": "hiepld1@gmail.com",
+      "password": "$2a$10$5m8xFX6SyCu5XZFbrwNRfeMwY0nHQxkDqwm20eJcx.CElOYo3/jgC",
+      "username": "hiepld",
+      "id": 1
+    }
+  ]
 }
